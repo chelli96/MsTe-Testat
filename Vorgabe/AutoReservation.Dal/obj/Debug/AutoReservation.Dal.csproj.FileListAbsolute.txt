@@ -1,0 +1,11 @@
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\bin\Debug\AutoReservation.Dal.dll.config
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\bin\Debug\AutoReservation.Dal.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\bin\Debug\EntityFramework.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\bin\Debug\EntityFramework.xml
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\obj\Debug\AutoReservation.Dal.csprojResolveAssemblyReference.cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\obj\Debug\AutoReservation.Dal.csproj.CoreCompileInputs.cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\obj\Debug\AutoReservation.Dal.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Dal\obj\Debug\AutoReservation.Dal.pdb
