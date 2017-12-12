@@ -7,7 +7,13 @@ namespace AutoReservation.Dal
 {
     public class AutoReservationContext : DbContext
     {
+
+        public DbSet<Auto> Autos { get; set; }
+        public DbSet<Kunde> Kunden { get; set; }
+        public DbSet<Reservation> Reservationen { get; set; }
         public AutoReservationContext()
+
+
         {
             // Ensures that the database will be initialized
             Database.Initialize(false);
@@ -47,11 +53,11 @@ namespace AutoReservation.Dal
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            modelBuilder.Entity<Auto>()
-                .Map<StandardAuto>(a => a.Requires("AutoKlasse").HasValue(2))
-                .Map<MittelklasseAuto>(a => a.Requires("AutoKlasse").HasValue(1))
-                .Map<LuxusklasseAuto>(a => a.Requires("AutoKlasse").HasValue(0))
-                .ToTable("Auto");
+            //modelBuilder.Entity<Auto>()
+            //    .Map<StandardAuto>(a => a.Requires("AutoKlasse").HasValue(2))
+            //    .Map<MittelklasseAuto>(a => a.Requires("AutoKlasse").HasValue(1))
+            //    .Map<LuxusklasseAuto>(a => a.Requires("AutoKlasse").HasValue(0))
+            //    .ToTable("Auto");
 
 
         }

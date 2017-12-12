@@ -8,7 +8,7 @@ namespace AutoReservation.Dal.Entities
     {
         [Key]
         [Column("Id")]
-        public int ReservationsNr { get; set; }
+        public int Id { get; set; }
         [Required]
         public DateTime Von { get; set; }
         [Required]
