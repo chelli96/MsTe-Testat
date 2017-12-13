@@ -7,8 +7,8 @@ namespace AutoReservation.Dal.Entities
     public class Reservation
     {
         [Key]
-        [Column("Id")]
-        public int Id { get; set; }
+        [Column("ReservationsNr")]
+        public int ReservationsNr { get; set; }
         [Required]
         public DateTime Von { get; set; }
         [Required]
