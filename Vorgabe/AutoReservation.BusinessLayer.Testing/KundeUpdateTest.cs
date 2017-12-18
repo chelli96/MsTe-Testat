@@ -5,23 +5,27 @@ using System;
 
 namespace AutoReservation.BusinessLayer.Testing
 {
-    [TestClass]
-    public class KundeUpdateTest
-    {
-        private KundeManager target;
-        private KundeManager Target => target ?? (target = new KundeManager());
+	[TestClass]
+	public class KundeUpdateTest
+	{
+		private KundeManager target;
+		private KundeManager Target => target ?? (target = new KundeManager());
 
 
-        [TestInitialize]
-        public void InitializeTestData()
-        {
-            TestEnvironmentHelper.InitializeTestData();
-        }
+		[TestInitialize]
+		public void InitializeTestData()
+		{
+			TestEnvironmentHelper.InitializeTestData();
+		}
 
-        [TestMethod]
-        public void UpdateKundeTest()
-        {
-            Assert.Inconclusive("Test not implemented.");
-        }
-    }
+		[TestMethod]
+		public void UpdateKundeTest()
+		{
+			Kunde kunde = Target.getKundeByID(1);
+			kunde.Nachname = "Müller";
+			Target.UpdateKunde(kunde);
+			Kunde updatedKunde = Target.getKundeByID(1);
+			Assert.AreEqual("Müller", updatedKunde.Nachname);
+		}
+	}
 }

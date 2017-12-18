@@ -78,6 +78,11 @@
     </Compile>
     <Compile Include="DataTransferObjects\AutoDto.cs" />
     <Compile Include="DataTransferObjects\AutoKlasse.cs" />
+    <Compile Include="DataTransferObjects\DtoBase.cs" />
+    <Compile Include="DataTransferObjects\Faults\InvalidDateRangeException.cs" />
+    <Compile Include="DataTransferObjects\Faults\OptimisticConcurrencyException.cs" />
+    <Compile Include="DataTransferObjects\Faults\AutoUnavailableException.cs" />
+    <Compile Include="DataTransferObjects\IValidatable.cs" />
     <Compile Include="DataTransferObjects\KundeDto.cs" />
     <Compile Include="DataTransferObjects\ReservationDto.cs" />
     <Compile Include="Interfaces\IAutoReservationService.cs" />
@@ -93,7 +98,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataTransferObjects\Faults\" />
+    <Folder Include="DataTransferObjects\Core\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

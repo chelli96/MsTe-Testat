@@ -2,14 +2,8 @@
 
 namespace AutoReservation.BusinessLayer.Exceptions
 {
-    public class InvalidDateRangeException<T> : Exception
+    public class InvalidDateRangeException : Exception
     {
-        public InvalidDateRangeException(string message) : base(message) { }
-        public InvalidDateRangeException(string message, T mergedEntity) : base(message)
-        {
-            MergedEntity = mergedEntity;
-        }
-
-        public T MergedEntity { get; set; }
+	    public InvalidDateRangeException(string message) : base(message) { }
     }
 }
