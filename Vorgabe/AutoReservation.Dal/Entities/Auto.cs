@@ -37,4 +37,4 @@ namespace AutoReservation.Dal.Entities
     }
 }
 
-}
+

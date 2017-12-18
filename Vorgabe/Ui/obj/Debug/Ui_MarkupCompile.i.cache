@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\Ui\obj\Debug\
 Ui
 none
 false
 DEBUG;TRACE
-C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\App.xaml
-11151548125
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\Ui\App.xaml
+41953158568
 
-9-1213640133
+161240077782
 131569487696
-MainWindow.xaml;
+MainWindow.xaml;Views\auto.xaml;Views\kunde.xaml;Views\reservation.xaml;
 
-False
+True
 

@@ -1,0 +1,15 @@
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\bin\Debug\Ui.exe.config
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\bin\Debug\Ui.exe
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\bin\Debug\Ui.pdb
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\AutoReservation.Ui.csprojResolveAssemblyReference.cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\MainWindow.g.cs
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\App.g.cs
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\Ui_MarkupCompile.cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\Ui_MarkupCompile.lref
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\MainWindow.baml
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\Ui.g.resources
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\Ui.Properties.Resources.resources
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\AutoReservation.Ui.csproj.GenerateResource.Cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\AutoReservation.Ui.csproj.CoreCompileInputs.cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\Ui.exe
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\Ui.pdb

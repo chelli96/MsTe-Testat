@@ -3,10 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Views="clr-namespace:AutoReservation.Ui.Views"
         xmlns:local="clr-namespace:Ui"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Auto Reservation" Height="350" Width="525">
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Autos">
+                <Views:AutoView x:Name="avAutoView"
+                                DataContext="{Binding Path=AutoViewModel, Mode=OneWay}"/>
+            </TabItem>
+            <TabItem Header="Kunden">
+            </TabItem>
+            <TabItem Header="Reservationen">
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

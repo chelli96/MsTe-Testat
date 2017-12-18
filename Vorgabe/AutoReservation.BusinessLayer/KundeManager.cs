@@ -39,7 +39,8 @@ namespace AutoReservation.BusinessLayer
             using (AutoReservationContext context = new AutoReservationContext())
             {
                 context.Kunden.Add(kunde);
-                context.SaveChanges();
+	            context.Entry(kunde).State = EntityState.Added;
+				context.SaveChanges();
                 return kunde;
             }
         }
@@ -67,7 +68,8 @@ namespace AutoReservation.BusinessLayer
             {
                 context.Kunden.Attach(kunde);
                 context.Kunden.Remove(kunde);
-                context.SaveChanges();
+	            context.Entry(kunde).State = EntityState.Deleted;
+				context.SaveChanges();
             }
         }
     }
