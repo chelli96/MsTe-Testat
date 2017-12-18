@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ui.ViewModels
 {
-    class Class1
+    class AutoViewModel
     {
     }
 }

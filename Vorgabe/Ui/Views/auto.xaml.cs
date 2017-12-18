@@ -23,8 +23,8 @@ namespace Ui.Views
         public Window1()
         {
             InitializeComponent();
-            var test = new AutoViewModel();
-            DataContext = test;
+            var autoTest = new AutoViewModel();
+            DataContext = autoTest;
         }
     }
 }

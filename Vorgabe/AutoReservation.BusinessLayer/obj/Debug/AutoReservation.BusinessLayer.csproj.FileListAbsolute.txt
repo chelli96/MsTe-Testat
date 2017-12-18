@@ -11,3 +11,16 @@ C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\A
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.dll
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.BusinessLayer.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.BusinessLayer.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.Dal.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.Dal.dll.config
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.pdb
