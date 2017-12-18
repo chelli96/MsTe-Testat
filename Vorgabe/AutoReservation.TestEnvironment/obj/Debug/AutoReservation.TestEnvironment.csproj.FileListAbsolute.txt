@@ -1,0 +1,13 @@
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.TestEnvironment.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.TestEnvironment.pdb
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.Dal.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.Dal.pdb
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\AutoReservation.Dal.dll.config
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.xml
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.csprojResolveAssemblyReference.cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.csproj.CoreCompileInputs.cache
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.dll
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.pdb

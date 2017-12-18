@@ -9,68 +9,80 @@ using AutoReservation.Dal.Entities;
 
 namespace AutoReservation.BusinessLayer
 {
-    public class AutoManager
-        : ManagerBase
-    {
-        // Example
-        public List<Auto> Autos
-        {
-            get
-            {
-                using (AutoReservationContext context = new AutoReservationContext())
-                {
-                    return context.Autos.ToList();
-                }
-            }
-        }
+	public class AutoManager
+		: ManagerBase
+	{
+		// Example
+		public List<Auto> Autos
+		{
+			get
+			{
+				using (var context = new AutoReservationContext())
+				{
+					List<Auto> allAutos = (from autos in context.Autos
+										   select autos)
+						.ToList<Auto>();
+					return allAutos;
 
-        public Auto getAutoByID(int id)
-        {
-            using (AutoReservationContext context = new AutoReservationContext())
-            {
+				}
 
-                return context.Autos.SingleOrDefault(a => a.Id == id);
-            }
-        }
+			}
+		}
 
-        public Auto InsertAuto(Auto auto)
-        {
-            using (AutoReservationContext context = new AutoReservationContext())
-            {
-                context.Autos.Add(auto);
-	            context.Entry(auto).State = EntityState.Added;
+		public Auto getAutoByID(int id)
+		{
+			using (var context = new AutoReservationContext())
+			{
+
+				var query = from auto in context.Autos
+							where auto.Id == id
+							select auto;
+				return query.FirstOrDefault();
+			}
+		}
+
+		public Auto InsertAuto(Auto auto)
+		{
+			using (var context = new AutoReservationContext())
+			{
+				context.Autos.Add(auto);
+				context.Entry(auto).State = EntityState.Added;
 				context.SaveChanges();
-                return auto;
-            }
-        }
 
-        public void UpdateAuto(Auto auto)
-        {
-            using (AutoReservationContext context = new AutoReservationContext())
-            {
-                try
-                {
-                    context.Autos.Attach(auto);
-                    context.Entry(auto).State = EntityState.Modified;
-                    context.SaveChanges();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    CreateOptimisticConcurrencyException(context, auto);
-                }
-            }
-        }
+			}
+			return auto;
+		}
 
-        public void DeleteAuto(Auto auto)
-        {
-            using (AutoReservationContext context = new AutoReservationContext())
-            {
-                context.Autos.Attach(auto);
-                context.Autos.Remove(auto);
-	            context.Entry(auto).State = EntityState.Deleted;
-                context.SaveChanges();
-            }
-        }
+		public Auto UpdateAuto(Auto auto)
+		{
+			using (var context = new AutoReservationContext())
+			{
+				try
+				{
+					context.Autos.Attach(auto);
+					context.Entry(auto).State = EntityState.Modified;
+					context.SaveChanges();
+					return auto;
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+					throw CreateOptimisticConcurrencyException<Auto>(context, auto);
+				}
+			}
+		}
 
-    }
+		public void DeleteAuto(Auto auto)
+		{
+			using (var context = new AutoReservationContext())
+			{
+				var query = (from a in context.Autos
+							 where a.Id == auto.Id
+							 select a).FirstOrDefault();
+				context.Autos.Remove(query);
+				context.Entry(query).State = EntityState.Deleted;
+				context.SaveChanges();
+			}
+		}
+
+	}
 }

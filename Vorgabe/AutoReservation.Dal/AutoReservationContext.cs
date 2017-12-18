@@ -51,12 +51,6 @@ namespace AutoReservation.Dal
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            //modelBuilder.Entity<Auto>()
-            //    .Map<StandardAuto>(a => a.Requires("AutoKlasse").HasValue(2))
-            //    .Map<MittelklasseAuto>(a => a.Requires("AutoKlasse").HasValue(1))
-            //    .Map<LuxusklasseAuto>(a => a.Requires("AutoKlasse").HasValue(0))
-            //    .ToTable("Auto");
-
 
         }
 
