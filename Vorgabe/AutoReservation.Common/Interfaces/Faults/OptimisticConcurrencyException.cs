@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoReservation.Common.DataTransferObjects.Faults
+namespace AutoReservation.Common.Interfaces.Faults
 {
 	[DataContract]
 	public class ConcurrencyException

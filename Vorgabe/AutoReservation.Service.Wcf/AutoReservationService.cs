@@ -10,7 +10,7 @@ using AutoReservation.Dal.Entities;
 
 namespace AutoReservation.Service.Wcf
 {
-    public class AutoReservationService : IAutoReservationService
+	public class AutoReservationService : IAutoReservationService
     {
 
 	    private AutoManager serviceAuto;
@@ -135,8 +135,18 @@ namespace AutoReservation.Service.Wcf
 		    {
 			    throw new FaultException<ReservationDto>(ex.MergedEntity.ConvertToDto(), ex.Message);
 		    }
-		    
-	    }
+		    catch (BusinessLayer.Exceptions.InvalidDateRangeException ex)
+		    {
+			    var invEx = new Common.Interfaces.Faults.InvalidDateRangeException(ex.Message);
+			    throw new FaultException<Common.Interfaces.Faults.InvalidDateRangeException>(invEx);
+		    }
+		    catch (BusinessLayer.Exceptions.AutoUnavailableException ex)
+		    {
+			    var unavEx = new Common.Interfaces.Faults.AutoUnavailableException(ex.Message);
+			    throw new FaultException<Common.Interfaces.Faults.AutoUnavailableException>(unavEx);
+		    }
+
+		}
 
 	    public void DeleteAuto(AutoDto auto)
 	    {
@@ -171,7 +181,39 @@ namespace AutoReservation.Service.Wcf
 	    public ReservationDto InsertReservation(ReservationDto reservation)
 	    {
 		    WriteActualMethod();
+<<<<<<< HEAD
 			return DtoConverter.ConvertToDto(ServiceReservation.InstertReservation(DtoConverter.ConvertToEntity(reservation)));
 	    }
     }
+=======
+		    try
+		    {
+			    DtoConverter.ConvertToDto(ServiceReservation.InstertReservation(DtoConverter.ConvertToEntity(reservation)));
+			}
+		    catch (OptimisticConcurrencyException<Reservation> ex)
+		    {
+			    throw new FaultException<ReservationDto>(ex.MergedEntity.ConvertToDto(), ex.Message);
+		    }
+		    catch (BusinessLayer.Exceptions.InvalidDateRangeException ex)
+		    {
+			    var invEx = new Common.Interfaces.Faults.InvalidDateRangeException(ex.Message);
+			    throw new FaultException<Common.Interfaces.Faults.InvalidDateRangeException>(invEx);
+		    }
+		    catch (BusinessLayer.Exceptions.AutoUnavailableException ex)
+		    {
+			    var unavEx = new Common.Interfaces.Faults.AutoUnavailableException(ex.Message);
+			    throw new FaultException<Common.Interfaces.Faults.AutoUnavailableException>(unavEx);
+		    }
+
+		}
+
+		public bool IsAutoAvailable(ReservationDto reservation)
+		{
+			{
+				WriteActualMethod();
+				return ServiceReservation.IsAutoAvailable(reservation.ConvertToEntity());
+			}
+		}
+	}
+>>>>>>> 88d44bc9cdf32f1f57af186916cb1c37bee1662f
 }

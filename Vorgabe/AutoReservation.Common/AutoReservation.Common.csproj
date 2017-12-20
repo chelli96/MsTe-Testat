@@ -78,11 +78,19 @@
     </Compile>
     <Compile Include="DataTransferObjects\AutoDto.cs" />
     <Compile Include="DataTransferObjects\AutoKlasse.cs" />
+<<<<<<< HEAD
     <Compile Include="DataTransferObjects\Core\DtoBase.cs" />
     <Compile Include="DataTransferObjects\Faults\InvalidDateRangeException.cs" />
     <Compile Include="DataTransferObjects\Faults\OptimisticConcurrencyException.cs" />
     <Compile Include="DataTransferObjects\Faults\AutoUnavailableException.cs" />
     <Compile Include="DataTransferObjects\Core\IValidatable.cs" />
+=======
+    <Compile Include="DataTransferObjects\DtoBase.cs" />
+    <Compile Include="Interfaces\Faults\InvalidDateRangeException.cs" />
+    <Compile Include="Interfaces\Faults\OptimisticConcurrencyException.cs" />
+    <Compile Include="Interfaces\Faults\AutoUnavailableException.cs" />
+    <Compile Include="DataTransferObjects\IValidatable.cs" />
+>>>>>>> 88d44bc9cdf32f1f57af186916cb1c37bee1662f
     <Compile Include="DataTransferObjects\KundeDto.cs" />
     <Compile Include="DataTransferObjects\ReservationDto.cs" />
     <Compile Include="Interfaces\IAutoReservationService.cs" />

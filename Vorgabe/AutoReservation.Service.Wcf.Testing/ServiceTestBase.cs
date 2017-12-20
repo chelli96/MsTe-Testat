@@ -4,9 +4,10 @@ using AutoReservation.TestEnvironment;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.ServiceModel;
-using AutoReservation.Common.DataTransferObjects.Faults;
+using AutoReservation.Common.Interfaces.Faults;
 
 namespace AutoReservation.Service.Wcf.Testing
 {
@@ -220,28 +221,100 @@ namespace AutoReservation.Service.Wcf.Testing
 
         #region Insert / update invalid time range
 
-        [TestMethod]
+        [TestMethod, ExpectedException(typeof(FaultException<InvalidDateRangeException>))]
         public void InsertReservationWithInvalidDateRangeTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+	        var auto = Target.GetAutoById(1);
+	        var kunde = Target.GetKundeById(1);
+
+	        var r1 = new ReservationDto
+	        {
+		        Auto = auto,
+		        Kunde = kunde,
+		        Von = new DateTime(2020, 01, 01),
+		        Bis = new DateTime(2002, 12, 31)
+	        };
+
+	        Target.InsertReservation(r1);
         }
 
-        [TestMethod]
+        [TestMethod, ExpectedException(typeof(FaultException<AutoUnavailableException>))]
         public void InsertReservationWithAutoNotAvailableTest()
         {
-            Assert.Inconclusive("Test not implemented.");
-        }
+	        var auto = Target.GetAutoById(1);
+	        var kunde = Target.GetKundeById(1);
 
-        [TestMethod]
-        public void UpdateReservationWithInvalidDateRangeTest()
-        {
-            Assert.Inconclusive("Test not implemented.");
-        }
+			var r1 = new ReservationDto
+	        {
+		        Auto = auto,
+		        Kunde = kunde,
+		        Von = new DateTime(2020, 01, 01),
+		        Bis = new DateTime(2020, 12, 31)
+	        };
 
-        [TestMethod]
+	        Target.InsertReservation(r1);
+
+	        var r2 = new ReservationDto
+	        {
+		        Auto = auto,
+		        Kunde = kunde,
+		        Von = new DateTime(2020, 01, 01),
+		        Bis = new DateTime(2020, 12, 31)
+	        };
+
+			Target.InsertReservation(r2);
+
+		}
+
+	    [TestMethod, ExpectedException(typeof(FaultException<InvalidDateRangeException>))]
+	    public void UpdateReservationWithInvalidDateRangeTest()
+	    {
+		    var auto = Target.GetAutoById(1);
+		    var kunde = Target.GetKundeById(1);
+
+		    var r1 = new ReservationDto
+		    {
+			    Auto = auto,
+			    Kunde = kunde,
+			    Von = new DateTime(2020, 1, 10),
+			    Bis = new DateTime(2020, 1, 15)
+		    };
+
+			r1.Bis = new DateTime(2020, 1, 7);
+
+		    Target.UpdateReservation(r1);
+	    }
+
+		[TestMethod, ExpectedException(typeof(FaultException<AutoUnavailableException>))]
         public void UpdateReservationWithAutoNotAvailableTest()
         {
-            Assert.Inconclusive("Test not implemented.");
+
+	        var auto = Target.GetAutoById(1);
+	        var kunde = Target.GetKundeById(1);
+
+	        var r1 = new ReservationDto
+	        {
+		        Auto = auto,
+		        Kunde = kunde,
+		        Von = new DateTime(2020, 1, 1),
+		        Bis = new DateTime(2020, 1, 15)
+	        };
+
+	        Target.InsertReservation(r1);
+
+	        var r2 = new ReservationDto
+	        {
+		        Auto = auto,
+		        Kunde = kunde,
+		        Von = new DateTime(2020, 1, 17),
+		        Bis = new DateTime(2020, 2, 17)
+	        };
+
+	        Target.InsertReservation(r2);
+
+			r2.Von = new DateTime(2020, 1, 11);
+
+	        Target.UpdateReservation(r2);
         }
 
         #endregion
@@ -251,20 +324,25 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void CheckAvailabilityIsTrueTest()
         {
-	        KundeDto kunde = Target.GetKundeById(1);
-	        AutoDto auto = Target.GetAutoById(1);
-	        ReservationDto availabilityCheck = new ReservationDto { ReservationsNr = 7, Von = new DateTime(2018, 03, 19), Bis = new DateTime(2018, 03, 21), Auto = auto, Kunde = kunde };
+	        ReservationDto reservation = new ReservationDto
+	        {
+		        Auto = Target.GetAutoById(3),
+		        Kunde = Target.GetKundeById(2),
+		        Von = new DateTime(2019, 01, 01),
+		        Bis = new DateTime(2019, 12, 31),
+	        };
 
 
-			Target.InsertReservation(availabilityCheck);
-	        Assert.AreEqual(Target.GetReservationByReservationsNr(7).Bis, new DateTime(2018, 3, 21));
+	        Assert.AreEqual(Target.IsAutoAvailable(reservation), true);
 
         }
 
-        [TestMethod, ExpectedException(typeof(AutoUnavailableException))]
+
+		//eventuell auch mit Exception
+        [TestMethod]
         public void CheckAvailabilityIsFalseTest()
         {
-			ReservationDto availabilityCheck = new ReservationDto
+			ReservationDto reservation = new ReservationDto
 	        {
 		        Auto = Target.GetAutoById(3),
 		        Kunde = Target.GetKundeById(1),
@@ -272,7 +350,7 @@ namespace AutoReservation.Service.Wcf.Testing
 		        Bis = new DateTime(2020, 1, 21)
 	        };
 
-	       Target.InsertReservation(availabilityCheck);
+	      Assert.AreEqual(Target.IsAutoAvailable(reservation), false);
 		}
 
         #endregion

@@ -4,17 +4,26 @@
 winexe
 C#
 .cs
-C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\Ui\obj\Debug\
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\obj\Debug\
 Ui
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\Ui\App.xaml
 41021253107
 
 251156628971
 15-2062679900
 MainWindow.xaml;Views\AutoView.xaml;Views\KundeView.xaml;Views\ReservationView.xaml;
+=======
+C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\Ui\App.xaml
+41953158568
+
+18-1886189114
+14-1981447060
+MainWindow.xaml;Views\auto.xaml;Views\kunde.xaml;Views\reservation.xaml;
+>>>>>>> 88d44bc9cdf32f1f57af186916cb1c37bee1662f
 
 True
 
