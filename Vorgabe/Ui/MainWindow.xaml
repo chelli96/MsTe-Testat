@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ui"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Auto Reservation" Height="350" Width="525">
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Autos"></TabItem>
+            <TabItem Header="Kunden">
+            </TabItem>
+            <TabItem Header="Reservationen">
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
