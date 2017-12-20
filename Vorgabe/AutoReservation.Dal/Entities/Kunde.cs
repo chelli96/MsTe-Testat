@@ -9,7 +9,8 @@ namespace AutoReservation.Dal.Entities
     public class Kunde
     {
         [Key]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		public int Id { get; set; }
         [Required, MaxLength(20)]
         public string Vorname { get; set; }
         [Required, MaxLength(20)]

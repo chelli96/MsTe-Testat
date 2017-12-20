@@ -9,7 +9,8 @@ namespace AutoReservation.Dal.Entities
     public abstract class Auto
     {
         [Key]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		public int Id { get; set; }
         [Required, MaxLength(30)]
         public string Marke { get; set; }
         public virtual int Tagestarif { get; set; }

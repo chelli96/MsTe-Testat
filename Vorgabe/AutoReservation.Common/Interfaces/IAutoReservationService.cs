@@ -2,6 +2,7 @@
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using AutoReservation.Common.DataTransferObjects;
+using AutoReservation.Common.Interfaces.Faults;
 
 namespace AutoReservation.Common.Interfaces
 {
@@ -31,8 +32,11 @@ namespace AutoReservation.Common.Interfaces
 	    [OperationContract, FaultContract(typeof(KundeDto))]
 	    KundeDto UpdateKunde(KundeDto kunde);
 
-	    [OperationContract, FaultContract(typeof(ReservationDto))]
-	    ReservationDto UpdateReservation(ReservationDto reservation);
+	    [OperationContract]
+		[FaultContract(typeof(ReservationDto))]
+	    [FaultContract(typeof(InvalidDateRangeException))]
+	    [FaultContract(typeof(AutoUnavailableException))]
+		ReservationDto UpdateReservation(ReservationDto reservation);
 
 	    [OperationContract]
 	    void DeleteAuto(AutoDto auto);
@@ -50,6 +54,12 @@ namespace AutoReservation.Common.Interfaces
 	    void InsertKunde(KundeDto kunde);
 
 	    [OperationContract]
-	    void InsertReservation(ReservationDto reservation);
+	    [FaultContract(typeof(InvalidDateRangeException))]
+	    [FaultContract(typeof(AutoUnavailableException))]
+		void InsertReservation(ReservationDto reservation);
+
+	    [OperationContract]
+	    bool IsAutoAvailable(ReservationDto reservation);
+
 	}
 }

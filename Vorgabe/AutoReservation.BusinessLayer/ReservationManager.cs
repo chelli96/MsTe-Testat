@@ -49,7 +49,7 @@ namespace AutoReservation.BusinessLayer
 				throw new InvalidDateRangeException("Mindestdauer der Reservation ist 24 Studnen");
 			}
 
-			else if (reservation.Von > reservation.Bis)
+			if (reservation.Von > reservation.Bis)
 			{
 				throw new InvalidDateRangeException("Das Bis Datum muss grösser sein als das Von Datum");
 			}
@@ -59,11 +59,26 @@ namespace AutoReservation.BusinessLayer
 		{
 			if ((from r in context.Reservationen
 				where ((r.Von <= reservation.Von && r.Bis > reservation.Von) ||
-				       (r.Von < reservation.Bis && r.Bis > reservation.Bis)) &&
-						r.AutoId.Equals(reservation.AutoId) && (r.ReservationsNr != reservation.ReservationsNr)
+				       (r.Von < reservation.Bis && r.Bis > reservation.Bis)) && (r.AutoId.Equals(reservation.AutoId) && (r.ReservationsNr != reservation.ReservationsNr))
 				select r).Any())
 			{
 				throw new AutoUnavailableException("Das gewünschte Auto ist in diesem Datumsbereich bereits vergeben");
+			}
+		}
+
+		public bool IsAutoAvailable(Reservation reservation)
+		{
+			using (AutoReservationContext context = new AutoReservationContext())
+			{
+				try
+				{
+					CheckAutoAvailability(context, reservation);
+					return true;
+				}
+				catch (AutoUnavailableException e)
+				{
+					return false;
+				}
 			}
 		}
 
@@ -77,8 +92,9 @@ namespace AutoReservation.BusinessLayer
 				context.Reservationen.Add(reservation);
 				context.Entry(reservation).State = EntityState.Added;
 				context.SaveChanges();
+				return reservation;
 			}
-			return reservation;
+			
 		}
 
 		public Reservation UpdateReservation(Reservation reservation)
