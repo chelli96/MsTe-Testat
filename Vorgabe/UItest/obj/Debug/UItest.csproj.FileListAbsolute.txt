@@ -1,0 +1,10 @@
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\UItest.csprojResolveAssemblyReference.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\MainWindow.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\Views\AutoView.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\Views\KundeView.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\Views\ReservationView.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\App.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\UItest_Content.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\UItest_MarkupCompile.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\UItest\obj\Debug\UItest_MarkupCompile.lref

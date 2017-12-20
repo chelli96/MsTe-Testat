@@ -54,16 +54,15 @@ namespace AutoReservation.Common.Interfaces
 	    KundeDto InsertKunde(KundeDto kunde);
 
 	    [OperationContract]
-<<<<<<< HEAD
+
 	    ReservationDto InsertReservation(ReservationDto reservation);
-=======
+
 	    [FaultContract(typeof(InvalidDateRangeException))]
 	    [FaultContract(typeof(AutoUnavailableException))]
-		void InsertReservation(ReservationDto reservation);
 
 	    [OperationContract]
 	    bool IsAutoAvailable(ReservationDto reservation);
 
->>>>>>> 88d44bc9cdf32f1f57af186916cb1c37bee1662f
+
 	}
 }

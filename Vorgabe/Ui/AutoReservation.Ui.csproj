@@ -153,10 +153,19 @@
     <Resource Include="AutoReservation.Ui.Factory.NinjectBindings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\add_48_48.png" />
-    <Resource Include="Images\delete_48_48.png" />
-    <Resource Include="Images\refresh_48_48.png" />
-    <Resource Include="Images\save_48_48.png" />
+    <Resource Include="Images\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

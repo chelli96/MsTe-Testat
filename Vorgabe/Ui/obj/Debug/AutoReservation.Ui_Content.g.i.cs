@@ -8,6 +8,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui.factory.ninjectbindings.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/autoreservation.ui.csproj")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.businesslayer.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.businesslayer.pdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.common.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.common.pdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.dal.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.dal.pdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.service.wcf.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.service.wcf.pdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.ui.exe")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/autoreservation.ui.pdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/entityframework.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/entityframework.sqlserver.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/ninject.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/bin/debug/ninject.extensions.xml.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/obj/debug/autoreservation.ui.exe")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/obj/debug/autoreservation.ui.pdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autoreservation.ui2/obj/debug/temppe/properties.resources.designer.cs.dll")]
 
 

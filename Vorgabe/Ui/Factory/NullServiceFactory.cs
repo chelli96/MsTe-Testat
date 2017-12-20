@@ -28,6 +28,11 @@ namespace AutoReservation.Ui.Factory
         public AutoDto InsertAuto(AutoDto auto) => null;
         public KundeDto InsertKunde(KundeDto kunde) => null;
         public ReservationDto InsertReservation(ReservationDto reservation) => null;
+        public bool IsAutoAvailable(ReservationDto reservation)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public AutoDto UpdateAuto(AutoDto auto) => null;
         public KundeDto UpdateKunde(KundeDto kunde) => null;
         public ReservationDto UpdateReservation(ReservationDto reservation) => null;
