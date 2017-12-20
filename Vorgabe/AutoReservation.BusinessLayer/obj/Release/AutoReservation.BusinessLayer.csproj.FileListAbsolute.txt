@@ -1,0 +1,13 @@
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\AutoReservation.BusinessLayer.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\AutoReservation.BusinessLayer.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\AutoReservation.Dal.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\EntityFramework.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\AutoReservation.Dal.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\AutoReservation.Dal.dll.config
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\EntityFramework.xml
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Release\AutoReservation.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Release\AutoReservation.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Release\AutoReservation.BusinessLayer.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer\obj\Release\AutoReservation.BusinessLayer.pdb

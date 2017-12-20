@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{65E8CE6C-B9BB-4DF5-90FF-5460318208CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Ui</RootNamespace>
-    <AssemblyName>Ui</AssemblyName>
+    <RootNamespace>AutoReservation.Ui</RootNamespace>
+    <AssemblyName>AutoReservation.Ui</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -34,8 +34,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net35\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Xml">
+      <HintPath>..\packages\Ninject.Extensions.Xml.3.2.0.0\lib\net45-full\Ninject.Extensions.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -47,27 +55,34 @@
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AutoReservationModule.cs" />
     <Compile Include="Converters\BasistarifVisibilityConverter.cs" />
     <Compile Include="Converters\DetailVisibilityConverter.cs" />
-    <Compile Include="Converters\EnumConverter.cs" />
+    <Compile Include="Converters\AutoKlasseEnumConverter.cs" />
+    <Compile Include="Factory\IServiceFactory.cs" />
+    <Compile Include="Factory\LocalDataAccessServiceFactory.cs" />
+    <Compile Include="Factory\NullServiceFactory.cs" />
+    <Compile Include="Factory\RemoteDataAccessServiceFactory.cs" />
     <Compile Include="ViewModels\AutoViewModel.cs" />
     <Compile Include="ViewModels\KundeViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\ReservationViewModel.cs" />
-    <Compile Include="Views\auto.xaml.cs">
-      <DependentUpon>auto.xaml</DependentUpon>
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\AutoView.xaml.cs">
+      <DependentUpon>AutoView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\kunde.xaml.cs">
-      <DependentUpon>kunde.xaml</DependentUpon>
+    <Compile Include="Views\KundeView.xaml.cs">
+      <DependentUpon>KundeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\reservation.xaml.cs">
-      <DependentUpon>reservation.xaml</DependentUpon>
+    <Compile Include="Views\ReservationView.xaml.cs">
+      <DependentUpon>ReservationView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -81,15 +96,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\auto.xaml">
+    <Page Include="Views\AutoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\kunde.xaml">
+    <Page Include="Views\KundeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\reservation.xaml">
+    <Page Include="Views\ReservationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,6 +127,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Factory\Factory.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +141,22 @@
       <Project>{22972439-3FFF-41D2-B5AE-6C06ABC66EB4}</Project>
       <Name>AutoReservation.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AutoReservation.Service.Wcf\AutoReservation.Service.Wcf.csproj">
+      <Project>{73f6e950-15a9-460d-993b-dfe469a9e286}</Project>
+      <Name>AutoReservation.Service.Wcf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AutoReservation.Ui.Factory.NinjectBindings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_48_48.png" />
+    <Resource Include="Images\delete_48_48.png" />
+    <Resource Include="Images\refresh_48_48.png" />
+    <Resource Include="Images\save_48_48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

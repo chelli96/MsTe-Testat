@@ -156,22 +156,22 @@ namespace AutoReservation.Service.Wcf
 			ServiceReservation.DeleteReservation(DtoConverter.ConvertToEntity(reservation));
 	    }
 
-	    public void InsertAuto(AutoDto auto)
+	    public AutoDto InsertAuto(AutoDto auto)
 	    {
 		    WriteActualMethod();
-		    DtoConverter.ConvertToDto(ServiceAuto.InsertAuto(DtoConverter.ConvertToEntity(auto)));
+		    return DtoConverter.ConvertToDto(ServiceAuto.InsertAuto(DtoConverter.ConvertToEntity(auto)));
 	    }
 
-	    public void InsertKunde(KundeDto kunde)
+	    public KundeDto InsertKunde(KundeDto kunde)
 	    {
 			WriteActualMethod();
-		     DtoConverter.ConvertToDto(ServiceKunde.InsertKunde(DtoConverter.ConvertToEntity(kunde)));
+		     return DtoConverter.ConvertToDto(ServiceKunde.InsertKunde(DtoConverter.ConvertToEntity(kunde)));
 	    }
 
-	    public void InsertReservation(ReservationDto reservation)
+	    public ReservationDto InsertReservation(ReservationDto reservation)
 	    {
 		    WriteActualMethod();
-			DtoConverter.ConvertToDto(ServiceReservation.InstertReservation(DtoConverter.ConvertToEntity(reservation)));
+			return DtoConverter.ConvertToDto(ServiceReservation.InstertReservation(DtoConverter.ConvertToEntity(reservation)));
 	    }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\Ui\App.xaml
-41953158568
+41021253107
 
-18-1683770661
-14-601084704
-MainWindow.xaml;Views\auto.xaml;Views\kunde.xaml;Views\reservation.xaml;
+251156628971
+15-2062679900
+MainWindow.xaml;Views\AutoView.xaml;Views\KundeView.xaml;Views\ReservationView.xaml;
 
-False
+True
 

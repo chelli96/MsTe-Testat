@@ -44,12 +44,12 @@ namespace AutoReservation.Common.Interfaces
 	    void DeleteReservation(ReservationDto reservation);
 
 	    [OperationContract]
-	    void InsertAuto(AutoDto auto);
+	    AutoDto InsertAuto(AutoDto auto);
 
 	    [OperationContract]
-	    void InsertKunde(KundeDto kunde);
+	    KundeDto InsertKunde(KundeDto kunde);
 
 	    [OperationContract]
-	    void InsertReservation(ReservationDto reservation);
+	    ReservationDto InsertReservation(ReservationDto reservation);
 	}
 }
