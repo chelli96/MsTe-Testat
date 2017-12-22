@@ -14,7 +14,7 @@ namespace AutoReservation.Dal
 
         {
             // Ensures that the database will be initialized
-            Database.Initialize(false);
+            //Database.Initialize(false);
 
             // Disable lazy loading
             Configuration.LazyLoadingEnabled = false;

@@ -16,7 +16,7 @@
         </CollectionViewSource>
         <converters:AutoKlasseEnumConverter x:Key="AutoKlasseEnumConverter" />
         <converters:BasistarifVisibilityConverter x:Key="BasistarifVisibilityConverter" />
-        <converters:DetailVisibilityConverter x:Key="DetailViewVisibilityConverter" />
+        <converters:DetailViewVisibilityConverter x:Key="DetailViewVisibilityConverter" />
     </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>

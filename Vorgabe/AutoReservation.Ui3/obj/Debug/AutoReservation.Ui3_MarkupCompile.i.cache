@@ -1,0 +1,20 @@
+﻿AutoReservation.Ui3
+
+
+library
+C#
+.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\
+AutoReservation.Ui3
+none
+false
+DEBUG;TRACE
+
+41021253107
+3332058553
+23284960121
+691167235261
+MainWindow.xaml;Views\AutoView.xaml;Views\KundeView.xaml;Views\ReservationView.xaml;
+
+True
+

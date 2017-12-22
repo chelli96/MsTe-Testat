@@ -11,3 +11,5 @@ C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\A
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.csproj.CoreCompileInputs.cache
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.dll
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.TestEnvironment\obj\Debug\AutoReservation.TestEnvironment.pdb

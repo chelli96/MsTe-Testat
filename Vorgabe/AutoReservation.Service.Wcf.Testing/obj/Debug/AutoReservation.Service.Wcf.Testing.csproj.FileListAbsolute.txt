@@ -23,3 +23,5 @@ C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\A
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Testing\bin\Debug\AutoReservation.Dal.dll.config
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Testing\obj\Debug\AutoReservation.Service.Wcf.Testing.dll
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Testing\obj\Debug\AutoReservation.Service.Wcf.Testing.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Service.Wcf.Testing\obj\Debug\AutoReservation.Service.Wcf.Testing.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Service.Wcf.Testing\obj\Debug\AutoReservation.Service.Wcf.Testing.pdb

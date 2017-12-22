@@ -17,3 +17,5 @@ C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\A
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.csproj.CoreCompileInputs.cache
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.dll
 C:\Users\kelle\Documents\HSR\Semester 3\DotNet\Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.pdb
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.dll
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.BusinessLayer.Testing\obj\Debug\AutoReservation.BusinessLayer.Testing.pdb

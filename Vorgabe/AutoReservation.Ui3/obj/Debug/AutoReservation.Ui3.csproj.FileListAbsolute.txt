@@ -1,0 +1,8 @@
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\AutoReservation.Ui3.csprojResolveAssemblyReference.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\MainWindow.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\Views\AutoView.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\Views\KundeView.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\Views\ReservationView.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\AutoReservation.Ui3_MarkupCompile.cache
+C:\Users\ben_d\Desktop\HSR\Semester 3\NET Technologien\LastTestat\Vorgabe\AutoReservation.Ui3\obj\Debug\AutoReservation.Ui3_MarkupCompile.lref

@@ -19,20 +19,12 @@ namespace AutoReservation.Ui.Factory
         public List<ReservationDto> Reservation => new List<ReservationDto>();
         public AutoDto GetAutoById(int id) => null;
         public KundeDto GetKundeById(int id) => null;
-        public ReservationDto GetReservationByReservationsNr(int reservationsnr)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        public ReservationDto GetReservationByReservationsNr(int reservationsnr) => null;
         public ReservationDto GetReservationByNr(int reservationsNr) => null;
         public AutoDto InsertAuto(AutoDto auto) => null;
         public KundeDto InsertKunde(KundeDto kunde) => null;
         public ReservationDto InsertReservation(ReservationDto reservation) => null;
-        public bool IsAutoAvailable(ReservationDto reservation)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        public bool IsAutoAvailable(ReservationDto reservation) => false;
         public AutoDto UpdateAuto(AutoDto auto) => null;
         public KundeDto UpdateKunde(KundeDto kunde) => null;
         public ReservationDto UpdateReservation(ReservationDto reservation) => null;
