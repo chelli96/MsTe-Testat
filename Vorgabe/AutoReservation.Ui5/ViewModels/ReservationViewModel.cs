@@ -162,9 +162,9 @@ namespace AutoReservation.Ui.ViewModels
                 Load();
             }
 
-            catch (Exception AutoUnavailableException)
+            catch (Exception)
             {
-                MessageBox.Show("Dieses Auto ist schon reserviert: " + AutoUnavailableException.Message, "Exception Sample", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Dieses Auto ist schon reserviert: " + typeof(AutoUnavailableException), "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
